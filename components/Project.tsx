@@ -15,6 +15,16 @@ type ProjectProps = {
   tags: [];
 };
 
+type CustomImageLoader = ({
+  src,
+  width,
+  quality,
+}: {
+  src: string;
+  width: number;
+  quality?: number;
+}) => string;
+
 const Project = ({ title, url, img, text, github, tags }: ProjectProps) => {
   const { ref } = useSectionInView("Projects", 1);
 
@@ -26,6 +36,9 @@ const Project = ({ title, url, img, text, github, tags }: ProjectProps) => {
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   const protocol = process.env.NODE_ENV === "production" ? "https:" : "http:";
+  const loaderProp: CustomImageLoader = ({ src,width,quality }) => {
+    return `${src}?w=${width}&q=${quality || 75}`;
+  };
   return (
     <motion.div
       style={{
@@ -62,6 +75,7 @@ const Project = ({ title, url, img, text, github, tags }: ProjectProps) => {
             width={300}
             height={200}
             quality={95}
+            loader={loaderProp}
             className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 
 
           group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 
