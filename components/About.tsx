@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 const About = () => {
-    const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("About");
 
   return (
     <motion.section
@@ -18,17 +18,18 @@ const About = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        In my previous work, as a soldier, I felt like, I'm able to do something
-        harder and useful. I tried to start programming and I love it. After one
-        year of learning, I decided to leave my previous work and give 100 % to
-        programming and education too. I have fun there with some courses, web
-        projects, games and images designs. In the future, I want to learn
-        frontend frameworks like: Vue,Angular and many more, if I will need it
-        to learn. From backend Node.js.
+        Front-end developer, which wanna become React professional developer.
+        After Udemy courses and several own projects and spending many hours by
+        programming, I'm <span className="font-bold">willing and adapt</span> to
+        learn anything to <span className="font-bold">fit </span>
+        for your projects. I'm looking for job with friendly and positive
+        atmosphere.
       </p>
       <p>
-        "A strong body makes the mind strong". After developing I really like to
-        go to the gym, reading books, running or spend the time with my family.
+        <span className="underline">
+          "A strong body makes the mind strong."
+        </span>{" "}
+        After developing I really like to go to the gym, running and learning.
       </p>
     </motion.section>
   );

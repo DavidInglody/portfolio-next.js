@@ -5,9 +5,12 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./SubmitBtn";
 import toast from "react-hot-toast";
+import { useState } from "react";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact");
+  const [senderEmail, setSenderEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   return (
     <motion.section
@@ -35,6 +38,8 @@ const Contact = () => {
             return;
           }
           toast.success("Email sent successfully!");
+          setSenderEmail("");
+          setMessage("");
         }}
       >
         <input
@@ -43,6 +48,8 @@ const Contact = () => {
           type="email"
           required
           maxLength={500}
+          value={senderEmail}
+          onChange={(e) => setSenderEmail(e.target.value)}
           placeholder="Your email"
         />
         <textarea
@@ -50,6 +57,8 @@ const Contact = () => {
           name="message"
           placeholder="Your message"
           required
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           maxLength={5000}
         ></textarea>
         <SubmitBtn />
