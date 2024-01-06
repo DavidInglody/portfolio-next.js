@@ -76,4 +76,24 @@ export const skillsData = [
   "React-Query",
   "DaisyUI",
   "Framer Motion",
+  "GSAP"
+] as const;
+
+export const mainSkills = [
+  {
+    tech_name: "Next.js",
+    tech_color: "#0AE448",
+  },
+  {
+    tech_name: "React",
+    tech_color: "#29D8FF",
+  },
+  {
+    tech_name: "JavaScript",
+    tech_color: "#ffd60a",
+  },
+  {
+    tech_name: "Tailwind",
+    tech_color: "#5a189a",
+  },
 ] as const;
