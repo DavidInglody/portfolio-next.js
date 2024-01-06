@@ -36,7 +36,7 @@ export const experiencesData = [
     title: "Vocational and technical school",
     location: "Michalovce, SK",
     description:
-      "I learned here basic thinking of programming. How working loops, functions and in general languages behind the scenes, what is totally worth it by developing.",
+      "This is where I learned the basic thinking of programming, how working loops, functions and in general languages behind the scenes, what is totally necessary at developing.",
     icon: React.createElement(LuGraduationCap),
     date: "2012-2016",
   },
@@ -44,7 +44,7 @@ export const experiencesData = [
     title: "Soldier",
     location: "Michalovce, SK",
     description:
-      "In 2022 I started my developer journey by learning Python. Later I decided to change it on HTML/CSS. I believed for my improve and give everything to become professional developer. With that idea I left my job as soldier, with good career progress and start doing what I really enjoy.",
+      "In 2022 I started my developer journey by learning Python. Later I decided to change it on HTML/CSS. I believed for my improve and give everything to become a professional developer. With that idea I left my job as soldier, with good career progress and start doing what I really enjoy.",
     icon: React.createElement(CgWorkAlt),
     date: "2018-2023",
   },
@@ -52,7 +52,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "Michalovce, SK",
     description:
-      "I'm now a front-end developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma. I'm open to full-time opportunities.",
+      "Now, I'm a front-end developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma. I'm open for full-time job opportunities.",
     icon: React.createElement(FaReact),
     date: "2022 - present",
   },
