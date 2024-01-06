@@ -56,7 +56,7 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">I'm Dávid Front-End Developer.</span> Making
+        <span className="font-bold">I'm Dávid </span><span className="font-bold bg-gradient-to-tr from-blue-600 via-blue-300 to-blue-600 bg-clip-text text-transparent">Front-End Developer.</span> Making
         moderns UI webs is my passion.
       </motion.h1>
       <motion.div
@@ -84,24 +84,26 @@ const Intro = () => {
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] 
+        <div className="flex gap-x-2">
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] 
           hover:text-gray-950
           active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/d%C3%A1vid-inglody-2b87ab282/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem focus:scale-[1.15] hover:scale-[1.15] 
+            href="https://www.linkedin.com/in/d%C3%A1vid-inglody-2b87ab282/"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem focus:scale-[1.15] hover:scale-[1.15] 
           hover:text-gray-950
           active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/DavidInglody"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+            href="https://github.com/DavidInglody"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );

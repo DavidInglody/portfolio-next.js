@@ -13,7 +13,7 @@ const useFetchProjects = async () => {
         const projects = response.items.map((item)=>{
             const id = item.sys.id
             const {title,url,image,text,github, tags} = item.fields
-            const img = (image as any)?.fields?.file?.url;  
+            const img = (image as any).fields?.file?.url;  
             return {title,url,id,img,text,github,tags}
         })
         return projects

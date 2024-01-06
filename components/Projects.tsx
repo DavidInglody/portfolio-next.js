@@ -18,7 +18,7 @@ const Projects = async () => {
     const projects = await useFetchProjects() as projectData[]
 
   return (
-    <section id="projects" className="max-w-[1120px] scroll-mt-28 mb-28">
+    <section id="projects" className="scroll-mt-28 mb-28">
       <SectionHeading>My Projects</SectionHeading>
       <div className="grid lg:grid-cols-2 gap-4">
         {projects.map((project, index) => (
