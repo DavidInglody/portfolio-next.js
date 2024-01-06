@@ -56,8 +56,7 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">I'm Dávid </span><span className="font-bold bg-gradient-to-tr from-blue-600 via-blue-300 to-blue-600 bg-clip-text text-transparent">Front-End Developer.</span> Making
-        moderns UI webs is my passion.
+        <span className="font-bold">I'm Dávid </span><span className="font-bold bg-gradient-to-tr from-blue-600 via-blue-300 to-blue-600 bg-clip-text text-transparent">Front-End Developer.</span> My passion is making websites with modern UI.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
