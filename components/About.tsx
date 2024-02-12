@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 const About = () => {
-  const { ref} = useSectionInView("About", 1);
+  const { ref } = useSectionInView("About", 1);
 
   return (
     <motion.section
@@ -18,19 +18,24 @@ const About = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I'm a Front-end developer, who wants to become a React professional
-        developer. After Udemy courses and several own projects, spending
-        many hours by programming, I'm{" "}
-        <span className="font-bold">willing</span> to learn anything
-        to <span className="font-bold">fit </span>
-        for your projects. I'm looking for a full-time job with friendly and positive
-        atmosphere.
+        Passionate and results-driven React Frontend Developer with over 2 years
+        of experience. Specializing in crafting dynamic and responsive user
+        interfaces, I bring a creative and detail-oriented approach to every
+        project. Proficient in the latest{" "}
+        <span className="font-bold">React.js</span> frameworks and libraries.
+        With a strong foundation in front-end technologies such as{" "}
+        <span className="font-bold">
+          HTML5, CSS3, and JavaScript/TypeScript
+        </span>
+        , I am adept at solving complex problems and implementing innovative
+        solutions.
       </p>
       <p>
         <span className="underline">
           "A strong body makes the mind strong."
         </span>{" "}
-        After developing I really like to go to the gym, running and reading books.
+        After developing I really like to go to the gym, running and reading
+        books.
       </p>
     </motion.section>
   );
