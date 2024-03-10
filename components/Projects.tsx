@@ -1,21 +1,11 @@
-import SectionHeading from "./SectionHeading"
-import React from "react"
-import useFetchProjects from "./FetchProjects"
-import Project from "./Project"
-
-
-type projectData = {
-  title: string;
-  url: string;
-  id: string;
-  img: string;
-  text: string;
-  github: string;
-  tags: [];
-};
+import SectionHeading from "./SectionHeading";
+import React from "react";
+import useFetchProjects from "./FetchProjects";
+import Project from "./Project";
+import { projectData } from "@/lib/types";
 
 const Projects = async () => {
-    const projects = await useFetchProjects() as projectData[]
+  const projects = (await useFetchProjects()) as projectData[];
 
   return (
     <section id="projects" className="scroll-mt-28 mb-28">
@@ -29,7 +19,6 @@ const Projects = async () => {
       </div>
     </section>
   );
-}
+};
 
-
-export default Projects
+export default Projects;
