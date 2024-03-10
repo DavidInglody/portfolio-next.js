@@ -10,16 +10,17 @@ import Skills from "@/components/Skills";
 export const dynamic = "force-dynamic";
 
 export default function Home() {
+
   return (
     <main className="flex flex-col items-center px-4">
-      <Intro/>
-      <SectionDivider/>
-      <About/>
-      <MainSkills/>
-      <Projects/>
-      <Skills/>
-      <Experience/>
-      <Contact/>
+      <Intro />
+      <SectionDivider />
+      <About />
+      <MainSkills />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Contact />
     </main>
-  )
+  );
 }
