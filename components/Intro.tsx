@@ -5,20 +5,20 @@ import me from "@/public/small-me.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import {HiDownload} from "react-icons/hi"
+import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 const Intro = () => {
-  const {ref} = useSectionInView("Home", 0.5)
-  const {setActiveSection, setTimeOfLastClick}=useActiveSectionContext()
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 pt-24 sm:pt-26"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 pt-24 sm:pt-26 z-10"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -56,7 +56,11 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">I'm Dávid </span><span className="font-bold bg-gradient-to-tr from-blue-600 via-blue-300 to-blue-600 bg-clip-text text-transparent">Front-End Developer.</span> My passion is making websites with modern UI.
+        <span className="font-bold">I'm Dávid </span>
+        <span className="font-bold bg-gradient-to-tr from-blue-600 via-blue-300 to-blue-600 bg-clip-text text-transparent">
+          Front-End Developer.
+        </span>{" "}
+        My passion is making websites with modern UI.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
