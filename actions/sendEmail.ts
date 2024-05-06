@@ -16,7 +16,7 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
   //   server-side validation
-  if (!validateString(message, 5000)) {
+  if (!validateString(message, 500)) {
     return {
       error: "Invalid message",
     };

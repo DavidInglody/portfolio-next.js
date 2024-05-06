@@ -27,7 +27,7 @@ const Experience = () => {
                 background:
                   theme === "light" ? "#f3f4f6" : "rgba(255, 255,255, 0.05)",
                 boxShadow: "none",
-                border: "1px solid rgba(0,0,0,0.0.5)",
+                border: "1px solid rgba(0,0,0,0.5)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
