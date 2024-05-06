@@ -1,6 +1,6 @@
 import { createClient } from "contentful";
 
-export const revalidate = 5;
+// export const revalidate = 5;
 
 const client = createClient({
   space: "kv543ap6rpf7",
